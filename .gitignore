@@ -1,4 +1,6 @@
 node_modules/
+example/copies
+t/copies
 *.swp
 *~
 npm-debug.log

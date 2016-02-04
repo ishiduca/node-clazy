@@ -1,10 +1,10 @@
 {
   "name": "clazy",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "wait for the end of multiple asynchronous processing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape t/*.js"
   },
   "repository": {
     "type": "git",
@@ -13,12 +13,25 @@
   "keywords": [
     "stream",
     "condition",
-    "conditional"
+    "conditional",
+    "wait",
+    "wait-for"
   ],
   "author": "ishiduca@gmail.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ishiduca/node-clazy/issues"
   },
-  "homepage": "https://github.com/ishiduca/node-clazy#readme"
+  "homepage": "https://github.com/ishiduca/node-clazy#readme",
+  "dependencies": {
+    "end-of-stream": "^1.1.0",
+    "inherits": "^2.0.1",
+    "readable-stream": "^2.0.5"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "remove": "^0.1.5",
+    "tape": "^4.4.0",
+    "through2": "^2.0.0"
+  }
 }
