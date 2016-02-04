@@ -7,7 +7,7 @@ inherits(Clazy, stream.Readable)
 
 function Clazy () {
     if (!(this instanceof Clazy)) return new Clazy
-    stream.Readable.call(this, {encoding: 'utf-8'})
+    stream.Readable.call(this, {encoding: 'utf8'})
     this._onWorks = []
     this._count   = 0
 }
